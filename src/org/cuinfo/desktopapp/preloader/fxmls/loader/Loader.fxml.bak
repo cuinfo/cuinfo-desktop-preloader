@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="org.cuinfo.desktopapp.preloader.fxmls.loader.LoaderController">
+  <children>
+    <ImageView fitHeight="300.0" fitWidth="600.0">
+      <image>
+        <Image url="@../../resources/images/background2.jpg" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="20.0" />
+    <Label fx:id="messageLabel" layoutX="15.0" layoutY="46.0" prefWidth="570.0" text="加载数据中...." textFill="WHITE" wrapText="true">
+      <effect>
+        <Reflection />
+      </effect>
+    </Label>
+    <Label alignment="CENTER" prefWidth="499.0" text="Copyright ©  2012, 绵阳晨光信息技术有限公司保留所有权利." textAlignment="CENTER" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0">
+      <font>
+        <Font name="Arial" size="14.0" />
+      </font>
+    </Label>
+    <Button fx:id="closeButton" defaultButton="true" prefHeight="29.0" prefWidth="81.0" text="%closeApp" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="274.0">
+      <effect>
+        <DropShadow color="#bfbfbf" />
+      </effect>
+    </Button>
+    <Label fx:id="errorLabel" alignment="CENTER" text="Label" textFill="RED" wrapText="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+      <font>
+        <Font name="Arial Black" size="24.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@loader.css" />
+  </stylesheets>
+</AnchorPane>
